@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/NightWebGL.loader.js";
+      var loaderUrl = buildUrl + "/gl_builtin_rp.loader.js";
       var config = {
-        dataUrl: buildUrl + "/NightWebGL.data",
-        frameworkUrl: buildUrl + "/NightWebGL.framework.js",
-        codeUrl: buildUrl + "/NightWebGL.wasm",
+        dataUrl: buildUrl + "/gl_builtin_rp.data",
+        frameworkUrl: buildUrl + "/gl_builtin_rp.framework.js",
+        codeUrl: buildUrl + "/gl_builtin_rp.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "urp-test",
@@ -81,7 +81,8 @@
         // and default/override low DPI mode on mobile browsers.
         config.devicePixelRatio = 1;
         unityShowBanner('WebGL builds are not supported on mobile devices.');
-      } else {
+      } else 
+      {
         canvas.style.width = "1248px";
         canvas.style.height = "702px";
       }
